@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "module": "index.js",
   "type": "module",
+  "homepage": "https://github.com/buhrmi/bun-plugin-svelte#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buhrmi/bun-plugin-svelte.git"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
