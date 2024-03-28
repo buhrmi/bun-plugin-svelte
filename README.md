@@ -14,7 +14,7 @@ preload = ['bun-plugin-svelte']
 
 Now you can import and use Svelte components inside of Bun:
 
-```
+```js
 import MyComponent from './mycomponent.svelte'
 const {html, css, head} = MyComponent.render()
 ```
