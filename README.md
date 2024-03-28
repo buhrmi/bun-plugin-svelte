@@ -12,7 +12,12 @@ Install the plugin with `bun add bun-plugin-svelte`, and then add `bun-plugin-sv
 preload = ['bun-plugin-svelte']
 ```
 
-Now you can import and use Svelte components inside of Bun.
+Now you can import and use Svelte components inside of Bun:
+
+```
+import MyComponent from './mycomponent.svelte'
+const {html, css, head} = MyComponent.render()
+```
 
 ## Features
 
