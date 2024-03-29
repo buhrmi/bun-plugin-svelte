@@ -2,7 +2,7 @@
 
 This repo is supposed to serve as a starting point for a fully fledged Bun plugin for Svelte. 
 
-At this point in time though, the only thing it can do is compile Svelte components for server-side rendering.
+At this point in time though, the only thing it can do is compile Svelte components. No configurations, preprocessors, etc.
 
 ## Motivation
 
@@ -18,14 +18,25 @@ Install the plugin with `bun add bun-plugin-svelte`, and then add `bun-plugin-sv
 preload = ['bun-plugin-svelte']
 ```
 
-Now you can import and use Svelte components inside of Bun:
+Now you can import and use Svelte components inside of Bun. By default, bun-plugin-svelte will compile a component with a `render` method suitable for server-side rendering. To compile a component to be mounted to the DOM inside a browser, append `?dom` to the filename.
+
+SSR:
 
 ```js
 import MyComponent from './mycomponent.svelte'
 const {html, css, head} = MyComponent.render()
+
+```
+
+Browser:
+
+```js
+import MyComponent from './mycomponent.svelte?dom'
+new MyComponent({target: document.body})
+
 ```
 
 ## Currently working
 
-- [x] Using Svelte components for server-side rendering
+- [x] Compile Svelte Components
 - [ ] Everything else
