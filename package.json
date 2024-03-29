@@ -1,6 +1,6 @@
 {
   "name": "bun-plugin-svelte",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "module": "index.js",
   "type": "module",
   "homepage": "https://github.com/buhrmi/bun-plugin-svelte#readme",
