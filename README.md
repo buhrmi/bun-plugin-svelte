@@ -2,7 +2,7 @@
 
 This repo is supposed to serve as a starting point for a fully fledged Bun plugin for Svelte. 
 
-At this point in time though, the only thing it can do is compile Svelte components. No configurations, preprocessors, etc.
+At this point in time though, the only thing it can do is compile Svelte components in an SSR context. No configurations, preprocessors, etc.
 
 ## Motivation
 
@@ -28,15 +28,8 @@ const {html, css, head} = MyComponent.render()
 
 ```
 
-Browser:
-
-```js
-import MyComponent from './mycomponent.svelte?dom'
-new MyComponent({target: document.body})
-
-```
 
 ## Currently working
 
-- [x] Compile Svelte Components
+- [x] Compile Svelte Components for SSR
 - [ ] Everything else
